@@ -1,0 +1,173 @@
+body,
+            html,
+            div#app {
+                height: 100%;
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                font-family: 'Nunito', sans-serif;
+                background-color: #1e202c;
+            }
+
+            div#app {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .content {
+                flex: 1;
+            }
+
+            .topnav{
+                height: 150px;
+                background-color: #15161C; /* For browsers that do not support gradients */
+                background-image: linear-gradient(#404148, #15161C);
+                box-shadow: 0 3px 5px rgba(30,30,30,.8);
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                position: fixed;
+                width: 100%;
+            }
+
+            .topnav ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                font-size: 20px;
+                color: #CCCCCC;
+            }
+
+            .topnav li {
+                margin-left: 20px;
+            }
+
+            .topnav li:hover,
+            .highlight {
+                color: white;
+                border-bottom: 3px solid white;
+                cursor: pointer;
+            }
+
+            .logo {
+                height: 80px;
+                cursor: pointer;
+            }
+
+            .footer {
+                background-color: #18191f;
+                color: #CCCCCC;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            
+            .content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .search-container {
+                background-color: white;
+                height: 50px;
+                width: 90%;
+                max-width: 600px;
+                border-radius: 20px;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                margin-top: 170px;
+            }
+            .search {
+                flex: 1;
+                
+            }
+            .search,
+            .search-button button {
+                outline: 0;
+                font-size: 16px;
+            }
+            .search-button button {
+                padding: 10px 15px;
+                border-radius: 10px;
+                background-color: #18191f;
+                color: #EFF71B;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .results {
+                margin-top: 30px;
+                width: 90%;
+                max-width: 700px;
+                overflow: hidden;
+                border-radius: 20px;
+                color: #EEE;
+            }
+
+            .results-header {
+                background-color: rgba(0,0,0,.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+            .result-temp {
+                font-size: 40px;
+                margin-right: 20px;
+            }
+            .result-details {
+                flex: 1;
+            }
+            .results-week {
+                background-color: rgba(0,0,0,.4);
+            }
+
+            .results-week table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            
+            .results-week tr:nth-child(even) {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .results-week td {
+                padding: 10px;
+            }
+            .result-icon {
+                font-size: 40px;
+            }
+
+
+            /* autocomplete */
+
+            .autocomplete {
+                position: absolute;
+                top: 230px;
+                overflow: hidden;
+                border-radius: 10px;
+                background-color: #CCCCCC;
+                
+                width: 90%;
+                max-width: 600px;
+            }
+            
+            .autocomplete div {
+                padding: 10px;
+                cursor: pointer;
+            }
+            .autocomplete div:nth-child(even) {
+                background-color: rgba(0, 0, 0, .2);
+            }
